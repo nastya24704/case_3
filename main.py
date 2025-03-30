@@ -40,7 +40,7 @@ def student_3(th,tsks,lk,tchr,cnd,a,b,c,d,e):
     return student_3
 
 def day_1():
-  print(f"{lcl.INTRODUCTION_DAY_1} ")
+  print(f"{lcl.INTRODUCTION_DAY_1}")
   print(f"{lcl.MANIUAL_DAY_1}")
   cases=[1,2,3,4,5,6,7,8,9,10]
   m = random.choice(cases)
@@ -1065,17 +1065,17 @@ def day_3():
 
 def win():
     th, tsks, lk, tchr, cnd \
-        = map(int, input("Введите значения последнего раунда (команда 1)").split())
+        = map(int, input(f"{lcl.RESULTS_1}").split())
     sum_1=th+ tsks+ lk+ tchr+ cnd
-    print("Итог:",sum_1)
+    print(f"{lcl.TOTAL}: {sum_1}")
     th, tsks, lk, tchr, cnd \
-        = map(int, input("Введите значения последнего раунда (команда 2)").split())
+        = map(int, input(f"{lcl.RESULTS_2}").split())
     sum_2 = th + tsks + lk + tchr + cnd
-    print("Итог:",sum_2)
+    print(f"{lcl.TOTAL}: {sum_2}")
     th, tsks, lk, tchr, cnd \
-        = map(int, input("Введите значения последнего раунда (команда 3)").split())
+        = map(int, input(f"{lcl.RESULTS_3}").split())
     sum_3 = th + tsks + lk + tchr + cnd
-    print("Итог:",sum_3)
+    print(f"{lcl.TOTAL}: {sum_3}")
     if sum_1>sum_2 and sum_3>sum_2:
         print("Студент 1, у тебя пятёрка, ты умница и выиграл этих бездельников")
         print("Студент 3, у тебя четвёрка, это тоже неплохо, но увы ты не дотянул,"
