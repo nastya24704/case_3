@@ -1130,6 +1130,8 @@ def main():
     input()
     day_3()
     input()
+    day_3()
+    input()
 
 if __name__ == '__main__':
     main()
