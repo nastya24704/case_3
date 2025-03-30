@@ -1,4 +1,5 @@
 import random
+import local as lcl
 
 def student_1(th,tsks,lk,tchr,cnd,a,b,c,d,e):
     theory=th+a
@@ -39,9 +40,8 @@ def student_3(th,tsks,lk,tchr,cnd,a,b,c,d,e):
     return student_3
 
 def day_1():
-  print("Ну что, вот и первый день подготовки, помни, что мир не так "
-      "прост и может случиться всё,что угодно "", главное не отчаиваться и помнить о главной цели"
-        "(После выпавшего события введите номер своей команды и нажмите enter) ")
+  print(f"{lcl.INTRODUCTION_DAY_1} ")
+  print(f"{lcl.MANIUAL_DAY_1}")
   cases=[1,2,3,4,5,6,7,8,9,10]
   m = random.choice(cases)
   match m:
@@ -53,7 +53,7 @@ def day_1():
     case 2:
      e = -50
      a, b, c, d = (0,) * 4
-     print("Сегодня тебе приснился кошмар,теперь ты боишься бабайку"
+     print("Сегодня тебе приснился кошмар, теперь ты боишься бабайку"
            "Весь день на стрессе(состояние ухудшилось)")
     case 3:
      c = 100
@@ -382,9 +382,8 @@ def day_1():
   print (th, tsks,lk,tchr,cnd)
 
 def day_2():
-  print("Так, так, так, наступил второй и последний день твоей поготовки,"
-        " завтра уже экзамен, соберись, ты просто обязан выиграть этот спор"
-        "введи значения с первого раунда(они были даны по окончаию первого раунда<3)")
+  print(f"{lcl.INTRODUCTION_DAY_2} ")
+  print(f"{lcl.MANIUAL_DAY_2}")
   th, tsks, lk, tchr, cnd=map(int,input().split())
   cases=[1,2,3,4,5,6,7,8,9,10]
   m = random.choice(cases)
@@ -1132,6 +1131,7 @@ def main():
     input()
     day_3()
     input()
+    win()
 
 if __name__ == '__main__':
     main()
