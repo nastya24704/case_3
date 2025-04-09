@@ -53,60 +53,44 @@ def day_1():
         case 1:
             e = 90
             a, b, c, d = (0,) * 4
-            print("Ты проснулся, а сегодня замечательная погода, "
-                  "+ вайб(состояние)")
+            print(f"{lcl.CONDITION_R_1}")
         case 2:
             e = -90
             a, b, c, d = (0,) * 4
-            print("Сегодня тебе приснился кошмар, теперь ты боишься бабайку."
-                  "Весь день на стрессе(состояние ухудшилось)")
+            print(f"{lcl.CONDITION_R_2}")
         case 3:
             c = 100
             a, b, e, d = (0,) * 4
-            print("Сегодня ты увидел падающую звезду и "
-                  "загадал желание - плюс удача")
+            print(f"{lcl.LUCK_R_1}")
         case 4:
-            print("Ты нравишься старшекурснику/старшекурснице."
-                  " тебе скинули расписанные билеты с полезными пометками "
-                  "(йоу, да ты красотка/мачо""+ теория")
+            print(f"{THEORY_R_1}")
             a = 80
             e, b, c, d = (0,) * 4
         case 5:
             c = -80
             d = -60
             a, b, e = (0,) * 3
-            print("Ты рассыпал соль — к ссорам и неудачам. "
-                  "Твои отношения с преподавателем и удача снизились в течение следующих 8 лет")
+            print(f"{lcl.LUCK_R_2}")
         case 6:
             b = 80
             a, e, c, d = (0,) * 4
-            print("Ты попал на бал великих математиков, они тебе все объяснили"
-                  " доступным языком(тралалело тралала)")
+            print(f"{lcl.TASKS_R_1}")
         case 7:
             b = -70
             a, e, c, d = (0,) * 4
-            print("Под окном орут студенты "
-                  "и тебе трудно сконцентрироваться (УК РФ ст.105…..)"
-                  "-задачи")
+            print(f"{lcl.TASKS_R_2}")
         case 8:
             a = -80
             e, b, c, d = (0,) * 4
-            print("Тебя отвлекает шум машин за окном "
-                  "(за намеренный прокол колеса штраф дают, "
-                  "одумайся. УК РФ ст.167)""-теория(")
+            print(f"{THEORY_R_2}")
         case 9:
             d = 90
             a, b, c, e = (0,) * 4
-            print("Ты улыбался другу, а преподаватель подумал,"
-                  " что ему, он поздоровался с тобой"
-                  " и улыбнулся в ответ""+ к отношению с преподавателем")
+            print(f"{LECTURER_R_1}")
         case 10:
             d = -90
             a, b, c, e = (0,) * 4
-            print("На твоём телефоне произошел глюк и он отправил сообщение"
-                  " в 3 часа ночи не в ту группу,"
-                  " а в группу с преподавателем из за чего он проснулся "
-                  "- отношения с преподавателем")
+            print(f"{LECTURER_R_2}")
 
     k = int(input(""))
     match k:
@@ -137,56 +121,44 @@ def day_1():
         case 1:
             e = 80
             a, b, c, d = (0,) * 4
-            print("Любимый артист выпустил крутую песню, которая тебя подбодрила"
-                  "и замотивировала(+ к состоянию)")
+            print(f"{lcl.CONDITION_R_3}")
         case 2:
             e = -50
             a, b, c, d = (0,) * 4
-            print("На тебя чихнул сосед, ты заболел (больше не здоровайся с ним..)")
+            print(f"{lcl.CONDITION_R_4}")
         case 3:
             c = 100
             e = 80
             a, b, d = (0,) * 3
-            print("Неожиданно, ты вспоминаешь о видео поздравлении на 8 марта/23 февраля"
-                  " и понимаешь,что удача сегодня на твоей стороне"
-                  " - плюс баллы удачи и состояния")
+            print(f"{lcl.LUCK_R_3}")
         case 4:
-            print("Ты знаешь всю эту теорию со школы (ты оксфорд или хогвартс закончил?)")
+            print(f"{THEORY_R_3}")
             a = 80
             e, b, c, d = (0,) * 4
         case 5:
             c = -80
             a, b, d, e = (0,) * 4
-            print("Проснувшись, ты разбил зеркало теперь тебя ждет семь лет неудач.")
+            print(f"{lcl.LUCK_R_4}")
         case 6:
             b = 80
             a, e, c, d = (0,) * 4
-            print("Ты научился управлять временем и у тебя куча времени на то,"
-                  " чтобы освоить навыки решения задач по матану")
+            print(f"{lcl.TASKS_R_3}")
         case 7:
             b = - 70
             a, e, c, d = (0,) * 4
-            print("Под окном орут студенты "
-                  "и тебе трудно сконцентрироваться (УК РФ ст.105…..)"
-                  "-задачи")
+            print(f"{lcl.TASKS_R_2}")
         case 8:
             a = -80
             e, b, c, d = (0,) * 4
-            print("Ты спал головой на север и знания сдулись"
-                  "(хахахах,ну минус теория получается)")
+            print(f"{THEORY_R_4}")
         case 9:
             d = 90
             a, b, c, e = (0,) * 4
-            print("Ты улыбался другу, а преподаватель подумал,"
-                  " что ему, он поздоровался с тобой"
-                  " и улыбнулся в ответ""+ к отношению с преподвавателем")
+            print(f"{LECTURER_R_3}")
         case 10:
             d = -90
             a, b, c, e = (0,) * 4
-            print("На твоём телефоне произошел глюк и он отправил сообщение"
-                  " в 3 часа ночи не в ту группу,"
-                  " а в группу с преподавателем из за чего он проснулся "
-                  "- отношения с преподавателем")
+            print(f"{LECTURER_R_4}")
     k = int(input(""))
     match k:
         case 1:
@@ -216,54 +188,43 @@ def day_1():
         case 1:
             e = 80
             a, b, c, d = (0,) * 4
-            print("Твои друзья отправили тебе посылку со сладостями,"
-                  " чтобы подбодрить во время подготовки(милота, + состояние)")
+            print(f"{lcl.CONDITION_R_5}")
         case 2:
             e = -80
             a, b, c, d = (0,) * 4
-            print("Любимые соседи решили устроить ремонт, из-за шума у тебя болит голова"
-                  "и ты не можешь нормально выспаться(-состояние)")
+            print(f"{lcl.CONDITION_R_6}")
         case 3:
             c = 100
             a, b, e, d = (0,) * 4
-            print("Сегодня ты увидел падающую звезду и "
-                  "загадал желание - плюс удача")
+            print(f"{lcl.LUCK_R_1}")
         case 4:
-            print("Ты нравишься старшекурснику/старшекурснице."
-                  " тебе скинули расписанные билеты с полезными пометками "
-                  "(йоу, да ты красотка/мачо""+ теория")
+            print(f"{lcl.THEORY_R_1}")
             a = 80
             e, b, c, d = (0,) * 4
         case 5:
             c = -100
             a, b, d, e = (0,) * 4
-            print("Во сне ты увидел женщину с пустыми вёдрами — к неудаче.")
+            print(f"{lcl.LUCK_R_5}")
         case 6:
             b = 80
             a, e, c, d = (0,) * 4
-            print("Ты попал на бал великих математиков, они тебе все объяснили"
-                  " доступным языком(тралалело тралала)")
+            print(f"{lcl.TASKS_R_1}")
         case 7:
             b = -80
             a, e, c, d = (0,) * 4
-            print("Под окном орут студенты "
-                  "и тебе трудно сконцентрироваться (УК РФ ст.105…..)"
-                  "-задачи")
+            print(f"{lcl.TASKS_R_2}")
         case 8:
             a = -80
             e, b, c, d = (0,) * 4
-            print("Тебя отвлекает шум машин за окном "
-                  "(за намеренный прокол колеса штраф дают, "
-                  "одумайся. УК РФ ст.167)""-теория(")
+            print(f"{lcl.THEORY_R_2}")
         case 9:
             d = 90
             a, b, c, e = (0,) * 4
-            print(" Сегодня ты поднял чью то куртку, потому что она упала с крючка в коридоре,"
-                  " а это оказалась куртка преподавателя( он видел, что ты её поднял, плюс уважение!) ")
+            print(f"{lcl.LECTURER_R_4}")
         case 10:
             d = -90
             a, b, c, e = (0,) * 4
-            print("Тебя случайно толкнули и ты врезался в преподавателя(минус в карму)")
+            print(f"{lcl.LECTURER_R_5}")
     k = int(input(""))
     match k:
         case 1:
@@ -293,60 +254,44 @@ def day_1():
         case 1:
             e = 70
             a, b, c, d = (0,) * 4
-            print("Ты проснулся, а сегодня замечательная погода, "
-                  "+ вайб(состояние)")
+            print(f"{lcl.CONDITION_R_1}")
         case 2:
             e = -70
             a, b, c, d = (0,) * 4
-            print("Сегодня тебе приснился кошмар,теперь ты боишься бабайку"
-                  "Весь день на стрессе(состояние ухудшилось)")
+            print(f"{lcl.CONDITION_R_2}")
         case 3:
             c = 100
             a, b, e, d = (0,) * 4
-            print("Сегодня ты увидел падающую звезду и "
-                  "загадал желание - плюс удача")
+            print(f"{lcl.LUCK_R_1}")
         case 4:
-            print("Ты нравишься старшекурснику/старшекурснице."
-                  " тебе скинули расписанные билеты с полезными пометками "
-                  "(йоу, да ты красотка/мачо""+ теория")
+            print(f"{lcl.THEORY_R_1}")
             a = 80
             e, b, c, d = (0,) * 4
         case 5:
             c = -80
             d = -70
             a, b, e = (0,) * 3
-            print("Рассыпать соль — к ссорам и неудачам. "
-                  "Твои отношения с преподавателем и удача снизились")
+            print(f"{lcl.LUCK_R_2}")
         case 6:
             b = 80
             a, e, c, d = (0,) * 4
-            print("Ты попал на бал великих математиков, они тебе все объяснили"
-                  " доступным языком(тралалело тралала)")
+            print(f"{lcl.TASKS_R_1}")
         case 7:
             b = - 70
             a, e, c, d = (0,) * 4
-            print("Под окном орут студенты "
-                  "и тебе трудно сконцентрироваться (УК РФ ст.105…..)"
-                  "-задачи")
+            print(f"{lcl.TASKS_R_2}")
         case 8:
             a = -80
             e, b, c, d = (0,) * 4
-            print("Тебя отвлекает шум машин за окном "
-                  "(за намеренный прокол колеса штраф дают, "
-                  "одумайся. УК РФ ст.167)""-теория(")
+            print(f"{lcl.THEORY_R_4}")
         case 9:
             d = 70
             a, b, c, e = (0,) * 4
-            print("Ты улыбался другу, а преподаватель подумал,"
-                  " что ему, он поздоровался с тобой"
-                  " и улыбнулся в ответ""+ к отношению с преподавателем")
+            print(f"{lcl.LECTURER_R_1}")
         case 10:
             d = -90
             a, b, c, e = (0,) * 4
-            print("На твоём телефоне произошел глюк и он отправил сообщение"
-                  " в 3 часа ночи не в ту группу,"
-                  " а в группу с преподавателем из за чего он проснулся "
-                  "- отношения с преподавателем")
+            print(f"{lcl.LECTURER_R_2}")
     k = int(input(""))
     match k:
         case 1:
@@ -375,91 +320,74 @@ def day_1():
     m = random.choice(cases_4)
     match m:
         case 1:
-            print("Пришло время делать выбор. Пойдёшь прогуляться на уличице или нет?"
-                  "Помни, что на улице тебе может полегчать, но также мир полон опасностей"
-                  " (Введи 1, если да и 2, если нет)")
-            awns = int(input())
+            print(f"{lcl.RESULT_D1_1}")
+            awns=int(input())
             match awns:
                 case 1:
-                    e = -80
-                    b = -70
-                    a, c, d = (0,) * 3
-                    print("Эх ты, добрая душа, вышел на улицу и погладил кота."
-                          "Теперь ты что то одхватил и у тебя поднялась темература из за неё ухудшилось состояние "
-                          "и теперь задачки ты не сможешь порешать, а в голове долго всё не держится")
+                 e = -80
+                 b = -70
+                 a, c, d = (0,) * 3
+                 print(f"{lcl.DEPENDENT_1}")
                 case 2:
-                    b = 70
-                    a, c, d, e = (0,) * 4
-                    print("Ну ты и домосед. Но зато с тобой ничего не случилось и ты немного порешал задачки"
-                          " + к задачкам")
+                 b = 70
+                 a, c, d, e = (0,) * 4
+                 print(f"{lcl.RESULT_D1_2}")
         case 2:
-            print("Уделять больше времени на подготовку к теории или практике?"
-                  "Перед тобой важный выбор чему уделить больше внимания,"
-                  " однако придётся чем то жертвовать."
-                  " (Введи 1, если выберешь теорию, 2, если практику и 3, если всего понемногу)")
-            awns = int(input())
+            print(f"{lcl.DEPENDENT_2}")
+            awns=int(input())
             match awns:
                 case 1:
-                    a = 100
-                    b = -80
-                    e, c, d = (0,) * 3
-                    print("Ты сделал свой выбор, теория на высоте, но практика пострадала")
+                 a = 100
+                 b = -80
+                 e, c, d = (0,) * 3
+                 print(f"{lcl.RESULT_D2_1}")
                 case 2:
-                    b = 100
-                    a = -80
-                    c, d, e = (0,) * 3
-                    print("Ты сделал свой выбор, практика на высоте, но теория пострадала пострадала")
+                 b = 100
+                 a = -80
+                 c, d, e = (0,) * 3
+                 print(f"{lcl.RESULT_D2_2}")
                 case 3:
-                    b = 70
-                    a = 70
-                    c, d, e = (0,) * 3
-                    print("Баланс- хорошая тактика. Мог бы получить в 2 раза больше,"
-                          " но зато ничего не потерял")
+                 b = 70
+                 a = 70
+                 c, d, e = (0,) * 3
+                 print(f"{lcl.RESULT_D2_3}")
         case 3:
-            print("Использовать метод Помодоро?(Не гугли что это, доверься своим ощущениям)"
-                  " (Введи 1, если да и 2, если нет)")
-            awns = int(input())
+            print(f"{lcl.DEPENDENT_3}")
+            awns=int(input())
             match awns:
                 case 1:
-                    a = 90
-                    b, e, c, d = (0,) * 4
-                    print("Ты правильно организовал свое время и не перетруждался +теория")
+                 a = 90
+                 b,e, c, d = (0,) * 4
+                 print(f"{lcl.RESULT_D3_1}")
                 case 2:
-                    a = -100
-                    c, d, e, b = (0,) * 4
-                    print("Ну ты лузер, очевидно же, что нужно было выбирать да")
+                 a = -100
+                 c, d, e,b = (0,) * 4
+                 print(f"{lcl.RESULT_D3_2}")
         case 4:
-            print("Написать своему школьному учителю по математике?"
-                  "(Введи 1, если да и 2, если нет)")
-            awns = int(input())
+            print(f"{lcl.DEPENDENT_4}")
+            awns=int(input())
             match awns:
                 case 1:
-                    a = 100
-                    e = -120
-                    b, c, d = (0,) * 3
-                    print("Тебе объяснили теорию и она стаа намного лучше, "
-                          "но на тебя напала очень сильная ностальгия у твоё состояние сильно упало")
+                 a = 100
+                 e = -120
+                 b, c, d = (0,) * 3
+                 print(f"{lcl.RESULT_D4_1}")
                 case 2:
-                    a, c, d, e, b = (0,) * 5
-                    print("Ничего страшного, что не написал, твои показатели остались прежними")
+                 a, c, d, e,b = (0,) * 5
+                 print(f"{lcl.RESULT_D4_2}")
         case 5:
-            print(" У тебя есть возможность позадавать преподавателю глупые вопросы,"
-                  " похвалить его прикид, его парфюм( тогда прибавиться показатель осп),"
-                  " однако твои братаны будут называть тебя подлизой и твоё состояние ухудшится(да/нет)."
-                  " Взвесь всё, что из этого понесёт большие потери?"
-                  "(Введи 1, если да и 2, если нет)")
-            awns = int(input())
+            print(f"{lcl.DEPENDENT_5}")
+            awns=int(input())
             match awns:
                 case 1:
-                    d = 100
-                    e = -90
-                    b, c, a = (0,) * 3
-                    print("Не переживай, твои братки всё понимают, это игра на выживание")
+                 d = 100
+                 e = -90
+                 b, c, a = (0,) * 3
+                 print(f"{lcl.RESULT_D5_1}")
                 case 2:
-                    d = -50
-                    a, c, e, b = (0,) * 4
-                    print("Ты не сильно примечательная личность, "
-                          "поэтому преподаватель стал забывать тебя, можно было и предпринять что нибудь")
+                 d = -50
+                 a, c, e, b = (0,) * 4
+                 print(f"{lcl.RESULT_D5_2}")
     k = int(input())
     match k:
         case 1:
@@ -483,10 +411,7 @@ def day_1():
             lk = lk + c
             tchr = tchr + d
             cnd = cnd + e
-    print("Вот и подошёл к концу первый день подготовки, не переживай, шансы на победу есть"
-          "вот, кстати твои показатели, с которыми ты закончил день. "
-          "Они тебе пригодятся для второго дня, а пока ход переходит к твоему другу"
-          "(для перехода ко второй команде нажмите enter)")
+    print(f"{lcl.CONCLUSION_DAY_1} ")
     print(th, tsks, lk, tchr, cnd)
 
 
@@ -983,3 +908,395 @@ def day_2():
     print(f"{lcl.CONCLUSION_DAY_2}")
     print(th, tsks, lk, tchr, cnd)
 
+
+def day_3():
+    print(f"{lcl.INTRODUCTION_DAY_3}")
+    th, tsks, lk, tchr, cnd = map(int, input().split())
+    cases = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}"
+                  "(сигма сигма боой, сигма бой, сигма бой...")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_9}")
+        case 4:
+            print(f"{lcl.THEORY_R_8}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_1)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITIONING_R_13}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITIONING_R_14}")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_11}")
+        case 4:
+            print(f"{lcl.THEORY_R_10}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}ач")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_9}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_11}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_2)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}")
+        case 3:
+            c = 100
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_12}")
+        case 4:
+            print(f"{lcl.THEORY_R_11}")
+            a = 80
+            c = 80
+            e, b, d = (0,) * 3
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_10}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            b = -80
+            e, c, d = (0,) * 3
+            print(f"{lcl.TASKS_R_11}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    cases_3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    m = random.choice(cases_3)
+    match m:
+        case 1:
+            e = 50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_11}")
+        case 2:
+            e = -50
+            a, b, c, d = (0,) * 4
+            print(f"{lcl.CONDITION_R_12}")
+        case 3:
+            c = 100
+            e = 40
+            a, b, d = (0,) * 3
+            print(f"{lcl.LUCK_R_9}")
+        case 4:
+            print(f"{lcl.THEORY_R_8}")
+            a = 80
+            e, b, c, d = (0,) * 4
+        case 5:
+            c = -80
+            a, b, d, e = (0,) * 4
+            print(f"{lcl.LUCK_R_10}")
+        case 6:
+            b = 80
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_8}")
+        case 7:
+            b = -70
+            a, e, c, d = (0,) * 4
+            print(f"{lcl.TASKS_R_7}")
+        case 8:
+            a = -80
+            e, b, c, d = (0,) * 4
+            print(f"{lcl.THEORY_R_9}")
+        case 9:
+            d = 50
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_9}")
+        case 10:
+            d = -90
+            a, b, c, e = (0,) * 4
+            print(f"{lcl.LECTURER_R_10}")
+
+    k = int(input(""))
+    match k:
+        case 1:
+            student_1(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 2:
+            student_2(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+        case 3:
+            student_3(th, tsks, lk, tchr, cnd, a, b, c, d, e)
+            th = th + a
+            tsks = tsks + b
+            lk = lk + c
+            tchr = tchr + d
+            cnd = cnd + e
+    print(f"{lcl.EXAM_END}")
+    print(th, tsks, lk, tchr, cnd)
+def win():
+    th, tsks, lk, tchr, cnd \
+        = map(int, input(f"{lcl.RESULTS_1}").split())
+    sum_1 = th + tsks + lk + tchr + cnd
+    print(f"{lcl.TOTAL}: {sum_1}")
+    th, tsks, lk, tchr, cnd \
+        = map(int, input(f"{lcl.RESULTS_2}").split())
+    sum_2 = th + tsks + lk + tchr + cnd
+    print(f"{lcl.TOTAL}: {sum_2}")
+    th, tsks, lk, tchr, cnd \
+        = map(int, input(f"{lcl.RESULTS_3}").split())
+    sum_3 = th + tsks + lk + tchr + cnd
+    print(f"{lcl.TOTAL}: {sum_3}")
+    if sum_1 <= 0:
+        if sum_2 <= 0:
+            if sum_3 <= 0:
+                print(f"{lcl.LOSER_123}")
+            else:
+                print(f"{lcl.LOSER_12}")
+                print(f"{lcl.WINNER_3}")
+        elif sum_2 > sum_3 and sum_3 > 0:
+            print(f"{lcl.LOSER_1}")
+            print(f"{lcl.WINNER_2}")
+            print(f"{lcl.SILVER_3}")
+        elif sum_2 < sum_3 and sum_3 > 0:
+            print(f"{lcl.LOSER_1}")
+            print(f"{lcl.WINNER_3}")
+            print(f"{lcl.SILVER_2}")
+        elif sum_2 == sum_3:
+            print(f"{lcl.LOSER_1}")
+            print(f"{lcl.WINNER_23}")
+
+        elif sum_2 <= sum_3:
+            print(f"{lcl.LOSER_12}")
+        else:
+            print(f"{lcl.WINNER_23}")
+            print(f"{lcl.WINNER_3}")
+
+    elif sum_2 <= 0 and sum_3 <= 0:
+        print(f"{lcl.LOSER_23}")
+        print(f"{lcl.WINNER_1}")
+    elif sum_3 <= 0 and sum_1 <= 0:
+        print(f"{lcl.LOSER_13}")
+        print(f"{lcl.WINNER_2}")
+    if sum_1 >= sum_2 and sum_3 >= sum_2:
+        print(f"{lcl.WINNER_1}")
+        print(f"{lcl.SILVER_3}")
+        print(f"{lcl.CUPRUM_2}")
+    elif sum_1 >= sum_2 and sum_2 >= sum_3:
+        print(f"{lcl.WINNER_1}")
+        print(f"{lcl.SILVER_2}")
+        print(f"{lcl.CUPRUM_3}")
+    elif sum_2 >= sum_1 and sum_1 >= sum_3:
+        print(f"{lcl.WINNER_2}")
+        print(f"{lcl.SILVER_1}")
+        print(f"{lcl.CUPRUM_3}")
+    elif sum_2 >= sum_3 and sum_3 >= sum_2:
+        print(f"{lcl.WINNER_2}")
+        print(f"{lcl.SILVER_3}")
+        print(f"{lcl.CUPRUM_1}")
+    elif sum_3 >= sum_2 and sum_2 >= sum_1:
+        print(f"{lcl.WINNER_3}")
+        print(f"{lcl.SILVER_2}")
+        print(f"{lcl.CUPRUM_1}")
+    elif sum_3 >= sum_1 and sum_1 >= sum_2:
+        print(f"{lcl.WINNER_3}")
+        print(f"{lcl.SILVER_1}")
+        print(f"{lcl.CUPRUM_2}")
+    elif sum_1 == sum_2 and sum_1 > sum_3:
+        print(f"{lcl.WINNER_12}")
+        print(f"{lcl.SILVER_3}")
+    elif sum_1 == sum_2 and sum_1 < sum_3:
+        print(f"{lcl.WINNER_3}")
+        print(f"{lcl.SILVER_1}")
+        print(f"{lcl.SILVER_2}")
+    elif sum_1 == sum_3 and sum_1 > sum_2:
+        print(f"{lcl.WINNER_13}")
+        print(f"{lcl.SILVER_2}")
+    elif sum_1 == sum_2 and sum_1 < sum_3:
+        print(f"{lcl.WINNER_3}")
+        print(f"{lcl.SILVER_1}")
+        print(f"{lcl.SILVER_2}")
+    elif sum_2 == sum_3 and sum_1 < sum_3:
+        print(f"{lcl.WINNER_23}")
+        print(f"{lcl.SILVER_1}")
+    else:
+        print(f"{lcl.WINNER_123}")
+
+def main():
+    day_1()
+    input()
+    day_1()
+    input()
+    day_1()
+    input()
+    day_2()
+    input()
+    day_2()
+    input()
+    day_2()
+    input()
+    day_3()
+    input()
+    day_3()
+    input()
+    day_3()
+    input()
+    win()
+
+
+if __name__ == '__main__':
+    main()
